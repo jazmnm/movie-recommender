@@ -27,7 +27,7 @@ pip install -r requirements.txt
 ### Clone the Repository
 
 ```bash
-git clone https://gitlab.code.hfactory.io/xianghan.mei/movie-recommender.git
+git clone https://github.com/jazmnm/movie-recommender.git
 cd movie-recommender
 ```
 
@@ -54,7 +54,6 @@ movie-recommender/
 │   └── knn_movie_recommender.model  # Trained model file
 │
 ├── utils/
-│   ├── __init__.py
 │   ├── utils.py                     
 │
 ├── ml-100k/                         
@@ -66,7 +65,7 @@ movie-recommender/
 └── README.md                        
 ```
 * `model` saves the trained models. 
-* `ml-100k` saves the data downloaded from https://grouplens.org/datasets/movielens/100k/. You can also download other data from movielens that have the same format and replace the ml-100k dataset to train a new model for recommendation. 
+* `ml-100k` saves the data downloaded from https://grouplens.org/datasets/movielens/100k/. You can also download other data from movielens that have the same format and replace the ml-100k dataset to train a new model for recommendation. The data is not included in this repository.
 * `train.py` contains the code to train and save a new recommender
 * `movie_recommender.py` is the main script for this project, where you receive input from user and use the trained model to predict a movie the user would like. 
 
